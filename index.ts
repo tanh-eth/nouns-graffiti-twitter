@@ -89,7 +89,7 @@ const tweetNewNounBlock = async (
   const tweet = `New Ethereum block proposed with a ⌐◨-◨ block graffiti.\n\n\
 Graffiti: ${graffiti}\n\
 Slot: ${slot}\n\
-Validator: ${block.miner}\n\
+Miner: ${block.miner}\n\
 See the slot details below: https://beaconcha.in/slot/${slot.toString()}`;
 
   await twitterClient.v2.tweet(tweet);
